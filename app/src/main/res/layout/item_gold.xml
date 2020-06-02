@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.demo.mvvmdemo.viewmodel.GoldListViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.type}"
+            android:textSize="20sp"
+            tools:text="品种代号" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.typename}"
+            android:textSize="20sp"
+            tools:text="品种名称" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.price}"
+            android:textSize="20sp"
+            tools:text="最新价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.openingprice}"
+            android:textSize="20sp"
+            tools:text="开盘价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.maxprice}"
+            android:textSize="20sp"
+            tools:text="最高价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.minprice}"
+            android:textSize="20sp"
+            tools:text="最低价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.changepercent}"
+            android:textSize="20sp"
+            tools:text="涨跌幅" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.lastclosingprice}"
+            android:textSize="20sp"
+            tools:text="昨收盘价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.tradeamount}"
+            android:textSize="20sp"
+            tools:text="总成交量" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.entity.updatetime}"
+            android:textSize="20sp"
+            tools:text="更新时间" />
+
+    </LinearLayout>
+
+</layout>
